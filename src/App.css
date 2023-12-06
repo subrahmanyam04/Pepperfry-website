@@ -1,0 +1,103 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.swiper-button-next {
+  background-color: whitesmoke; /* Change to your desired color */
+  color: black !important; /* Text color */
+  width: 50px !important; /* Adjust the width to your desired size */
+  height: 40px !important; /* Adjust the height to your desired size */
+  
+  line-height: 40px;
+  margin-right: 0px !important;
+  
+}
+
+.swiper-button-prev {
+  background-color: whitesmoke; /* Change to your desired color */
+  color: black !important; /* Text color */
+  width: 50px !important; /* Adjust the width to your desired size */
+  height: 40px !important; /* Adjust the height to your desired size */
+  
+  line-height: 40px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+ /* .swiper {
+  width: 100%;
+  height: 399px;
+}  */
+
+/* .swiper-slide {
+  font-size: 18px;
+  width: 100px;
+  height: auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 30px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* YourComponentStyles.css */
+
+/* Custom scrollbar container style */
+
+.custom-text {
+  color: #282c34;
+}
+.custom-text.selected {
+  color: red;
+}
+
+.custom-indicator {
+  background-color: red !important; /* Change the indicator color to red */
+}
+
+
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
