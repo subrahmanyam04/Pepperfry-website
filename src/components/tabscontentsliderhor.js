@@ -99,12 +99,12 @@ const Tabscontentsliderhor = () => {
 
 
         <Grid display={{lg:'none',md:'none',sm:'none',xs:'block'}}>
-            {jaggu.map((user) => (
+            {/* {jaggu.map((user) => (
                 <>
                     <Typography>{user.name}</Typography>
                     <Typography>{user.roll}</Typography>
                 </>
-            ))}
+            ))} */}
 
             <Swiper
                 modules={[Navigation, Pagination, Autoplay, Scrollbar, A11y]}

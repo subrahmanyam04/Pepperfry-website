@@ -78,7 +78,8 @@ const Furniturtab = () => {
 
                     <Grid lg={1.5} md={1.7} sm={2}  marginBottom={15}>
                         <Links to='/tabscontent/furniture-recliners' ><LargeText sx={{ color: '#9d6a37' }}>Recliners </LargeText></Links>
-                        <LargeText sx={{color:"red"}} onClick={() => handleClick('/tabscontent/furniture-1-seater-recliners')}>1 Seater Recliners  </LargeText>
+                        <Links to='/tabscontent/furniture-1-seater-recliners'><LargeText sx={{color:"red"}} >1 Seater Recliners </LargeText></Links>
+                        {/* <LargeText sx={{color:"red"}} onClick={() => handleClick('')}>  </LargeText> */}
                         <Links to='/tabscontent/furniture-2-seater-recliners'><LargeText>2 Seater Recliners  </LargeText></Links>
                         <Links to='/tabscontent/furniture-3-seater-recliners'><LargeText>3 Seater Recliners  </LargeText></Links>
                         <Links to='/tabscontent/furniture-sofa-sets'><LargeText>Recliner Sets  </LargeText></Links>

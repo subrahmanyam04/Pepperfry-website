@@ -8,7 +8,7 @@ const Lampandliughtenings = () => {
         fontSize: "12px",
         color: "#5B5B5B",
         // fontWeight: "700",
-        cursor:"pointer",
+        cursor: "pointer",
         textDecoration: "none",
         fontFamily: "Poppins,sans-serif"
     }));
@@ -19,10 +19,10 @@ const Lampandliughtenings = () => {
 
     const handleClick = () => {
         window.location.href = '/tabscontent/lamp&lightenings-floor-lamps';
-      };
-      const handleClick2 = () => {
+    };
+    const handleClick2 = () => {
         window.location.href = '/tabscontent/lamp&lightenings-hanging-lights';
-      };
+    };
 
 
 
@@ -34,13 +34,14 @@ const Lampandliughtenings = () => {
 
                     {/* tabpannel column 1 */}
 
-                    <Grid lg={1.5} md={1.7} sm={2}  marginBottom={15}>
+                    <Grid lg={1.5} md={1.7} sm={2} marginBottom={15}>
                         <Links to='/tabscontent/lamp&lightenings-sofas' ><LargeText sx={{ color: '#9d6a37' }}>Lapms </LargeText></Links>
 
-{/*////////////////////////////////////////////////// working link////////////////////////////////////////////////////////////////////// */}
+                        {/*////////////////////////////////////////////////// working link////////////////////////////////////////////////////////////////////// */}
 
+                        <Links to='/tabscontent/lamp&lightenings-floor-lamps'><LargeText sx={{ color: "red" }}>Floor Lamps </LargeText></Links>
 
-                        <LargeText sx={{color:"red"}} onClick={handleClick}>Floor Lamps</LargeText>
+                        {/* <LargeText sx={{ color: "red" }} onClick={handleClick}>Floor Lamps</LargeText> */}
                         <Links to='/tabscontent/lamp&lightenings-2-seater-sofas'><LargeText >2 Seater Sofas </LargeText></Links>
                         <Links to='/tabscontent/lamp&lightenings-1-seater-sofas'><LargeText>1 Seater Sofas </LargeText></Links>
                         <Links to='/tabscontent/lamp&lightenings-sofa-sets'><LargeText>Sofa Sets </LargeText></Links>
@@ -69,12 +70,13 @@ const Lampandliughtenings = () => {
 
                     {/* tabpannel column 2 */}
 
-                    <Grid lg={1.5} md={1.7} sm={2}  marginBottom={15}>
+                    <Grid lg={1.5} md={1.7} sm={2} marginBottom={15}>
                         <Links to='/tabscontent/lamp&lightenings-recliners' ><LargeText sx={{ color: '#9d6a37' }}>Ceiling Lamps </LargeText></Links>
 
-{/*////////////////////////////////////////////////// working link////////////////////////////////////////////////////////////////////// */}
+                        {/*////////////////////////////////////////////////// working link////////////////////////////////////////////////////////////////////// */}
+                        <Links to='/tabscontent/lamp&lightenings-hanging-lights'><LargeText sx={{ color: "red" }}>Hanging Lights  </LargeText></Links>
 
-                        <LargeText sx={{color:"red"}} onClick={handleClick2}>Hanging Lights </LargeText>
+                        {/* <LargeText sx={{ color: "red" }} onClick={handleClick2}>Hanging Lights </LargeText> */}
                         <Links to='/tabscontent/lamp&lightenings-2-seater-recliners'><LargeText>2 Seater Recliners  </LargeText></Links>
                         <Links to='/tabscontent/lamp&lightenings-3-seater-recliners'><LargeText>3 Seater Recliners  </LargeText></Links>
                         <Links to='/tabscontent/lamp&lightenings-sofa-sets'><LargeText>Recliner Sets  </LargeText></Links>
@@ -99,7 +101,7 @@ const Lampandliughtenings = () => {
 
                     {/* tabpannel column 3 */}
 
-                    <Grid lg={1.5} md={1.7} sm={2}  marginBottom={15}>
+                    <Grid lg={1.5} md={1.7} sm={2} marginBottom={15}>
                         <Links to='/tabscontent/lamp&lightenings-chairs' ><LargeText sx={{ color: '#9d6a37' }}>Chairs </LargeText></Links>
                         <Links to='/tabscontent/lamp&lightenings-arm-chairs'><LargeText>Arm Chairs </LargeText></Links>
                         <Links to='/tabscontent/lamp&lightenings-rocking-chairs'><LargeText>Rocking Chairs </LargeText></Links>
@@ -127,7 +129,7 @@ const Lampandliughtenings = () => {
 
                     {/* tabpannel column 4 */}
 
-                    <Grid lg={1.5} md={1.7} sm={2}  marginBottom={15}>
+                    <Grid lg={1.5} md={1.7} sm={2} marginBottom={15}>
                         <Links to='/tabscontent/lamp&lightenings-centre-tables' ><LargeText sx={{ color: '#9d6a37' }}>Centre Tables  </LargeText></Links>
                         <Links to='/tabscontent/lamp&lightenings-coffee-tables'><LargeText>Coffee Tables  </LargeText></Links>
                         <Links to='/tabscontent/lamp&lightenings-coffee-table-sets'><LargeText>Coffee Table Sets  </LargeText></Links>
@@ -160,7 +162,7 @@ const Lampandliughtenings = () => {
                     {/* grid 5 images coloumn */}
 
 
-                    <Grid lg={3} md={2.5} sm={2}  marginBottom={15}>
+                    <Grid lg={3} md={2.5} sm={2} marginBottom={15}>
 
                         <Grid lg={12} md={12} sm={12}>
 
@@ -168,7 +170,7 @@ const Lampandliughtenings = () => {
                         </Grid>
                     </Grid>
 
-                    <Grid lg={3} md={2.5} sm={2}  marginBottom={15}>
+                    <Grid lg={3} md={2.5} sm={2} marginBottom={15}>
 
                         <Grid lg={12} md={12} sm={12}>
 

@@ -8,7 +8,7 @@ const Homedecor = () => {
         fontSize: "12px",
         color: "#5B5B5B",
         // fontWeight: "700",
-        cursor:"pointer",
+        cursor: "pointer",
         textDecoration: "none",
         fontFamily: "Poppins,sans-serif"
     }));
@@ -17,13 +17,13 @@ const Homedecor = () => {
         textDecoration: "none",
     }));
 
-      
+
     const handleClick = () => {
         window.location.href = '/tabscontent/homedecor-table-vases';
-      };
-      const handleClick2 = () => {
+    };
+    const handleClick2 = () => {
         window.location.href = '/tabscontent/homedecor-table-clocks';
-      };
+    };
 
 
     return (
@@ -34,13 +34,14 @@ const Homedecor = () => {
 
                     {/* tabpannel column 1 */}
 
-                    <Grid lg={1.5} md={1.7} sm={2}  marginBottom={15}>
+                    <Grid lg={1.5} md={1.7} sm={2} marginBottom={15}>
                         <Links to='/tabscontent/homedecor-sofas' ><LargeText sx={{ color: '#9d6a37' }}>Vases </LargeText></Links>
 
-{/*////////////////////////////////////////////////// working link////////////////////////////////////////////////////////////////////// */}
+                        {/*////////////////////////////////////////////////// working link////////////////////////////////////////////////////////////////////// */}
 
+                        <Links to='/tabscontent/homedecor-table-vases'><LargeText sx={{ color: "red" }}>Table Vases </LargeText></Links>
 
-                        <LargeText sx={{color:"red"}} onClick={handleClick}>Table Vases</LargeText>
+                        {/* <LargeText sx={{ color: "red" }} onClick={handleClick}>Table Vases</LargeText> */}
                         <Links to='/tabscontent/homedecor-2-seater-sofas'><LargeText >2 Seater Sofas </LargeText></Links>
                         <Links to='/tabscontent/homedecor-1-seater-sofas'><LargeText>1 Seater Sofas </LargeText></Links>
                         <Links to='/tabscontent/homedecor-sofa-sets'><LargeText>Sofa Sets </LargeText></Links>
@@ -69,12 +70,13 @@ const Homedecor = () => {
 
                     {/* tabpannel column 2 */}
 
-                    <Grid lg={1.5} md={1.7} sm={2}  marginBottom={15}>
+                    <Grid lg={1.5} md={1.7} sm={2} marginBottom={15}>
                         <Links to='/tabscontent/homedecor-recliners' ><LargeText sx={{ color: '#9d6a37' }}>PTable Decor  </LargeText></Links>
 
-{/*////////////////////////////////////////////////// working link////////////////////////////////////////////////////////////////////// */}
+                        {/*////////////////////////////////////////////////// working link////////////////////////////////////////////////////////////////////// */}
+                        <Links to='/tabscontent/homedecor-table-clocks'><LargeText sx={{ color: "red" }}>Table Clocks  </LargeText></Links>
 
-                        <LargeText sx={{color:"red"}} onClick={handleClick2}>Table Clocks </LargeText>
+                        {/* <LargeText sx={{ color: "red" }} onClick={handleClick2}>Table Clocks </LargeText> */}
                         <Links to='/tabscontent/homedecor-2-seater-recliners'><LargeText>2 Seater Recliners  </LargeText></Links>
                         <Links to='/tabscontent/homedecor-3-seater-recliners'><LargeText>3 Seater Recliners  </LargeText></Links>
                         <Links to='/tabscontent/homedecor-sofa-sets'><LargeText>Recliner Sets  </LargeText></Links>
@@ -99,7 +101,7 @@ const Homedecor = () => {
 
                     {/* tabpannel column 3 */}
 
-                    <Grid lg={1.5} md={1.7} sm={2}  marginBottom={15}>
+                    <Grid lg={1.5} md={1.7} sm={2} marginBottom={15}>
                         <Links to='/tabscontent/homedecor-chairs' ><LargeText sx={{ color: '#9d6a37' }}>Chairs </LargeText></Links>
                         <Links to='/tabscontent/homedecor-arm-chairs'><LargeText>Arm Chairs </LargeText></Links>
                         <Links to='/tabscontent/homedecor-rocking-chairs'><LargeText>Rocking Chairs </LargeText></Links>
@@ -127,7 +129,7 @@ const Homedecor = () => {
 
                     {/* tabpannel column 4 */}
 
-                    <Grid lg={1.5} md={1.7} sm={2}  marginBottom={15}>
+                    <Grid lg={1.5} md={1.7} sm={2} marginBottom={15}>
                         <Links to='/tabscontent/homedecor-centre-tables' ><LargeText sx={{ color: '#9d6a37' }}>Centre Tables  </LargeText></Links>
                         <Links to='/tabscontent/homedecor-coffee-tables'><LargeText>Coffee Tables  </LargeText></Links>
                         <Links to='/tabscontent/homedecor-coffee-table-sets'><LargeText>Coffee Table Sets  </LargeText></Links>
@@ -160,7 +162,7 @@ const Homedecor = () => {
                     {/* grid 5 images coloumn */}
 
 
-                    <Grid lg={3} md={2.5} sm={2}  marginBottom={15}>
+                    <Grid lg={3} md={2.5} sm={2} marginBottom={15}>
 
                         <Grid lg={12} md={12} sm={12}>
 
@@ -168,7 +170,7 @@ const Homedecor = () => {
                         </Grid>
                     </Grid>
 
-                    <Grid lg={3} md={2.5} sm={2}  marginBottom={15}>
+                    <Grid lg={3} md={2.5} sm={2} marginBottom={15}>
 
                         <Grid lg={12} md={12} sm={12}>
 

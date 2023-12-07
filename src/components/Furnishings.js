@@ -8,7 +8,7 @@ const Furnishings = () => {
         fontSize: "12px",
         color: "#5B5B5B",
         // fontWeight: "700",
-        cursor:"pointer",
+        cursor: "pointer",
         textDecoration: "none",
         fontFamily: "Poppins,sans-serif"
     }));
@@ -19,10 +19,10 @@ const Furnishings = () => {
 
     const handleClick = () => {
         window.location.href = '/tabscontent/furnishings-single-bed-sheets';
-      };
-      const handleClick2 = () => {
+    };
+    const handleClick2 = () => {
         window.location.href = '/tabscontent/furnishings-3ft-x-5ft';
-      };
+    };
 
 
     return (
@@ -33,13 +33,14 @@ const Furnishings = () => {
 
                     {/* tabpannel column 1 */}
 
-                    <Grid lg={1.5} md={1.7} sm={2}  marginBottom={15}>
+                    <Grid lg={1.5} md={1.7} sm={2} marginBottom={15}>
                         <Links to='/tabscontent/furnishings-sofas' ><LargeText sx={{ color: '#9d6a37' }}>Bed Sheets </LargeText></Links>
 
-{/*////////////////////////////////////////////////// working link////////////////////////////////////////////////////////////////////// */}
+                        {/*////////////////////////////////////////////////// working link////////////////////////////////////////////////////////////////////// */}
 
+                        <Links to='/tabscontent/furnishings-single-bed-sheets'><LargeText sx={{ color: "red" }}>Single Bed Sheets </LargeText></Links>
 
-                        <LargeText sx={{color:"red"}} onClick={handleClick}>Single Bed Sheets</LargeText>
+                        {/* <LargeText sx={{ color: "red" }} onClick={handleClick}>Single Bed Sheets</LargeText> */}
                         <Links to='/tabscontent/furnishings-2-seater-sofas'><LargeText >2 Seater Sofas </LargeText></Links>
                         <Links to='/tabscontent/furnishings-1-seater-sofas'><LargeText>1 Seater Sofas </LargeText></Links>
                         <Links to='/tabscontent/furnishings-sofa-sets'><LargeText>Sofa Sets </LargeText></Links>
@@ -68,12 +69,13 @@ const Furnishings = () => {
 
                     {/* tabpannel column 2 */}
 
-                    <Grid lg={1.5} md={1.7} sm={2}  marginBottom={15}>
+                    <Grid lg={1.5} md={1.7} sm={2} marginBottom={15}>
                         <Links to='/tabscontent/furnishings-recliners' ><LargeText sx={{ color: '#9d6a37' }}>Carpets  </LargeText></Links>
 
-{/*////////////////////////////////////////////////// working link////////////////////////////////////////////////////////////////////// */}
+                        {/*////////////////////////////////////////////////// working link////////////////////////////////////////////////////////////////////// */}
+                        <Links to='/tabscontent/furnishings-3ft-x-5ft'><LargeText sx={{ color: "red" }}>3ft x 5ft  </LargeText></Links>
 
-                        <LargeText sx={{color:"red"}} onClick={handleClick2}>3ft x 5ft </LargeText>
+                        {/* <LargeText sx={{ color: "red" }} onClick={handleClick2}>3ft x 5ft </LargeText> */}
                         <Links to='/tabscontent/furnishings-2-seater-recliners'><LargeText>2 Seater Recliners  </LargeText></Links>
                         <Links to='/tabscontent/furnishings-3-seater-recliners'><LargeText>3 Seater Recliners  </LargeText></Links>
                         <Links to='/tabscontent/furnishings-sofa-sets'><LargeText>Recliner Sets  </LargeText></Links>
@@ -98,7 +100,7 @@ const Furnishings = () => {
 
                     {/* tabpannel column 3 */}
 
-                    <Grid lg={1.5} md={1.7} sm={2}  marginBottom={15}>
+                    <Grid lg={1.5} md={1.7} sm={2} marginBottom={15}>
                         <Links to='/tabscontent/furnishings-chairs' ><LargeText sx={{ color: '#9d6a37' }}>Chairs </LargeText></Links>
                         <Links to='/tabscontent/furnishings-arm-chairs'><LargeText>Arm Chairs </LargeText></Links>
                         <Links to='/tabscontent/furnishings-rocking-chairs'><LargeText>Rocking Chairs </LargeText></Links>
@@ -126,7 +128,7 @@ const Furnishings = () => {
 
                     {/* tabpannel column 4 */}
 
-                    <Grid lg={1.5} md={1.7} sm={2}  marginBottom={15}>
+                    <Grid lg={1.5} md={1.7} sm={2} marginBottom={15}>
                         <Links to='/tabscontent/furnishings-centre-tables' ><LargeText sx={{ color: '#9d6a37' }}>Centre Tables  </LargeText></Links>
                         <Links to='/tabscontent/furnishings-coffee-tables'><LargeText>Coffee Tables  </LargeText></Links>
                         <Links to='/tabscontent/furnishings-coffee-table-sets'><LargeText>Coffee Table Sets  </LargeText></Links>
@@ -159,7 +161,7 @@ const Furnishings = () => {
                     {/* grid 5 images coloumn */}
 
 
-                    <Grid lg={3} md={2.5} sm={2}  marginBottom={15}>
+                    <Grid lg={3} md={2.5} sm={2} marginBottom={15}>
 
                         <Grid lg={12} md={12} sm={12}>
 
@@ -167,7 +169,7 @@ const Furnishings = () => {
                         </Grid>
                     </Grid>
 
-                    <Grid lg={3} md={2.5} sm={2}  marginBottom={15}>
+                    <Grid lg={3} md={2.5} sm={2} marginBottom={15}>
 
                         <Grid lg={12} md={12} sm={12}>
 

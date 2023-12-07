@@ -99,13 +99,13 @@ const Tabscontentsliderformobile = () => {
             {/* from medium screens */}
 
 
-            <Grid display={{ lg: 'none', md: 'block', sm: 'block', xs: 'none' }}>
-                {jaggu.map((user) => (
+            <Grid display={{ lg: 'none', md: 'block', sm: 'block', xs: 'none' }} marginTop={2.5}>
+                {/* {jaggu.map((user) => (
                     <>
                         <Typography>{user.name}</Typography>
                         <Typography>{user.roll}</Typography>
                     </>
-                ))}
+                ))} */}
 
                 <Swiper
                     // install Swiper modules

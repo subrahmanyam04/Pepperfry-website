@@ -40,9 +40,9 @@ console.log('i am shyam in productsslider',shyam)
                             navigation={true}
                             thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
                             modules={[FreeMode, Navigation, Thumbs]}
-                            className="mySwiper3"
+                            className="mySwiper2"
                             style={{
-                                '--swiper-navigation-size': '15px', // Set the size you desire
+                                '--swiper-navigation-size': '20px', // Set the size you desire
                               }}
                         >
                             <SwiperSlide>
@@ -80,10 +80,14 @@ console.log('i am shyam in productsslider',shyam)
                             onSwiper={setThumbsSwiper}
                             spaceBetween={10}
                             slidesPerView={8}
+                            // navigation={true}
                             freeMode={true}
                             watchSlidesProgress={true}
                             modules={[FreeMode, Navigation, Thumbs]}
-                            className="mySwiper2"
+                            className="mySwiper3"
+                            style={{
+                                '--swiper-navigation-size': '5px', // Set the size you desire
+                              }}
                         >
                             <SwiperSlide>
                                 <img src={shyam[0].img1} className='img'/>

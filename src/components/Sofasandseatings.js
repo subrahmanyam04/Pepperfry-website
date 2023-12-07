@@ -9,7 +9,7 @@ const Sofasandseatings = () => {
         color: "#5B5B5B",
         // fontWeight: "700",
         textDecoration: "none",
-        cursor:"pointer",
+        cursor: "pointer",
         fontFamily: "Poppins,sans-serif"
     }));
 
@@ -19,10 +19,10 @@ const Sofasandseatings = () => {
 
     const handleClick = () => {
         window.location.href = '/tabscontent/sofas&seatings-lhs-sectionals';
-      };
-      const handleClick2 = () => {
+    };
+    const handleClick2 = () => {
         window.location.href = '/tabscontent/sofas&seatings-wing-chairs';
-      };
+    };
 
     return (
         <>
@@ -32,7 +32,7 @@ const Sofasandseatings = () => {
 
                     {/* tabpannel column 1 */}
 
-                    <Grid lg={1.5} md={1.7} sm={2}  marginBottom={15}>
+                    <Grid lg={1.5} md={1.7} sm={2} marginBottom={15}>
                         <Links to='/tabscontent/sofas&seatings-sofas' ><LargeText sx={{ color: '#9d6a37' }}>Sofas</LargeText></Links>
                         <Links to='/tabscontent/sofas&seatings-3-seater-sofas'><LargeText >3 Seater Sofas </LargeText></Links>
                         <Links to='/tabscontent/sofas&seatings-2-seater-sofas'><LargeText >2 Seater Sofas </LargeText></Links>
@@ -42,9 +42,10 @@ const Sofasandseatings = () => {
 
                         <Links to='/tabscontent/sofas&seatings-sofas' ><LargeText sx={{ color: '#9d6a37', marginTop: '20px' }}>Sectional Sofas </LargeText></Links>
 
-{/*////////////////////////////////////////////////// working link////////////////////////////////////////////////////////////////////// */}
+                        {/*////////////////////////////////////////////////// working link////////////////////////////////////////////////////////////////////// */}
+                        <Links to='/tabscontent/sofas&seatings-lhs-sectionals'><LargeText sx={{ color: "red" }}>LHS Sectionals  </LargeText></Links>
 
-                       <LargeText sx={{color:"red"}} onClick={handleClick}>LHS Sectionals  </LargeText>
+                        {/* <LargeText sx={{ color: "red" }} onClick={handleClick}>LHS Sectionals  </LargeText> */}
                         <Links to='/tabscontent/sofas&seatings-2-seater-sofas'><LargeText>RHS Sectionals  </LargeText></Links>
                         <Links to='/tabscontent/sofas&seatings-1-seater-sofas'><LargeText>Corner Sofas </LargeText></Links>
 
@@ -66,7 +67,7 @@ const Sofasandseatings = () => {
 
                     {/* tabpannel column 2 */}
 
-                    <Grid lg={1.5} md={1.7} sm={2}  marginBottom={15}>
+                    <Grid lg={1.5} md={1.7} sm={2} marginBottom={15}>
                         <Links to='/tabscontent/sofas&seatings-recliners' ><LargeText sx={{ color: '#9d6a37' }}>Recliners </LargeText></Links>
                         <Links to='/tabscontent/sofas&seatings-1-seater-recliners' ><LargeText >1 Seater Recliners  </LargeText></Links>
                         <Links to='/tabscontent/sofas&seatings-2-seater-recliners'><LargeText>2 Seater Recliners  </LargeText></Links>
@@ -76,9 +77,10 @@ const Sofasandseatings = () => {
 
                         <Links to='/tabscontent/sofas&seatings-sofa-chairs' ><LargeText sx={{ color: '#9d6a37', marginTop: '20px' }}>Sofa Chairs  </LargeText></Links>
 
-{/*////////////////////////////////////////////////// working link////////////////////////////////////////////////////////////////////// */}
+                        {/*////////////////////////////////////////////////// working link////////////////////////////////////////////////////////////////////// */}
+                        <Links to='/tabscontent/sofas&seatings-wing-chairs'><LargeText sx={{ color: "red" }}>Wing Chairs  </LargeText></Links>
 
-                        <LargeText sx={{color:"red"}} onClick={handleClick2}>Wing Chairs   </LargeText>
+                        {/* <LargeText sx={{ color: "red" }} onClick={handleClick2}>Wing Chairs   </LargeText> */}
                         <Links to='/tabscontent/sofas&seatings-lounge-chairs'><LargeText>Lounge Chairs  </LargeText></Links>
                         <Links to='/tabscontent/sofas&seatings-slipper-chairs '><LargeText>Slipper Chairs  </LargeText></Links>
                         <Links to='/tabscontent/sofas&seatings-barrel-chairs'><LargeText>Barrel Chairs   </LargeText></Links>
@@ -96,7 +98,7 @@ const Sofasandseatings = () => {
 
                     {/* tabpannel column 3 */}
 
-                    <Grid lg={1.5} md={1.7} sm={2}  marginBottom={15}>
+                    <Grid lg={1.5} md={1.7} sm={2} marginBottom={15}>
                         <Links to='/tabscontent/sofas&seatings-chairs' ><LargeText sx={{ color: '#9d6a37' }}>Chairs </LargeText></Links>
                         <Links to='/tabscontent/sofas&seatings-arm-chairs'><LargeText>Arm Chairs </LargeText></Links>
                         <Links to='/tabscontent/sofas&seatings-rocking-chairs'><LargeText>Rocking Chairs </LargeText></Links>
@@ -124,7 +126,7 @@ const Sofasandseatings = () => {
 
                     {/* tabpannel column 4 */}
 
-                    <Grid lg={1.5} md={1.7} sm={2}  marginBottom={15}>
+                    <Grid lg={1.5} md={1.7} sm={2} marginBottom={15}>
                         <Links to='/tabscontent/sofas&seatings-centre-tables' ><LargeText sx={{ color: '#9d6a37' }}>Centre Tables  </LargeText></Links>
                         <Links to='/tabscontent/sofas&seatings-coffee-tables'><LargeText>Coffee Tables  </LargeText></Links>
                         <Links to='/tabscontent/sofas&seatings-coffee-table-sets'><LargeText>Coffee Table Sets  </LargeText></Links>
@@ -157,7 +159,7 @@ const Sofasandseatings = () => {
                     {/* grid 5 images coloumn */}
 
 
-                    <Grid lg={3} md={2.5} sm={2}  marginBottom={15}>
+                    <Grid lg={3} md={2.5} sm={2} marginBottom={15}>
 
                         <Grid lg={12} md={12} sm={12}>
 
@@ -165,7 +167,7 @@ const Sofasandseatings = () => {
                         </Grid>
                     </Grid>
 
-                    <Grid lg={3} md={2.5} sm={2}  marginBottom={15}>
+                    <Grid lg={3} md={2.5} sm={2} marginBottom={15}>
 
                         <Grid lg={12} md={12} sm={12}>
 

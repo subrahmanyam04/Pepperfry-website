@@ -8,7 +8,7 @@ const Mattressers = () => {
         fontSize: "12px",
         color: "#5B5B5B",
         // fontWeight: "700",
-        cursor:"pointer",
+        cursor: "pointer",
         textDecoration: "none",
         fontFamily: "Poppins,sans-serif"
     }));
@@ -17,13 +17,13 @@ const Mattressers = () => {
         textDecoration: "none",
     }));
 
-    
+
     const handleClick = () => {
         window.location.href = '/tabscontent/mattressers-foam';
-      };
-      const handleClick2 = () => {
+    };
+    const handleClick2 = () => {
         window.location.href = '/tabscontent/mattressers-sleeping-pillows';
-      };
+    };
 
     return (
         <>
@@ -33,13 +33,14 @@ const Mattressers = () => {
 
                     {/* tabpannel column 1 */}
 
-                    <Grid lg={1.5} md={1.7} sm={2}  marginBottom={15}>
+                    <Grid lg={1.5} md={1.7} sm={2} marginBottom={15}>
                         <Links to='/tabscontent/mattressers-sofas' ><LargeText sx={{ color: '#9d6a37' }}>King Size Mattresses </LargeText></Links>
 
-{/*////////////////////////////////////////////////// working link////////////////////////////////////////////////////////////////////// */}
+                        {/*////////////////////////////////////////////////// working link////////////////////////////////////////////////////////////////////// */}
 
+                        <Links to='/tabscontent/mattressers-foam'><LargeText sx={{ color: "red" }}>Foam </LargeText></Links>
 
-                        <LargeText sx={{color:"red"}} onClick={handleClick}>Foam</LargeText>
+                        {/* <LargeText sx={{color:"red"}} onClick={handleClick}>Foam</LargeText> */}
                         <Links to='/tabscontent/mattressers-2-seater-sofas'><LargeText >2 Seater Sofas </LargeText></Links>
                         <Links to='/tabscontent/mattressers-1-seater-sofas'><LargeText>1 Seater Sofas </LargeText></Links>
                         <Links to='/tabscontent/mattressers-sofa-sets'><LargeText>Sofa Sets </LargeText></Links>
@@ -68,12 +69,13 @@ const Mattressers = () => {
 
                     {/* tabpannel column 2 */}
 
-                    <Grid lg={1.5} md={1.7} sm={2}  marginBottom={15}>
+                    <Grid lg={1.5} md={1.7} sm={2} marginBottom={15}>
                         <Links to='/tabscontent/mattressers-recliners' ><LargeText sx={{ color: '#9d6a37' }}>Pillows  </LargeText></Links>
 
-{/*////////////////////////////////////////////////// working link////////////////////////////////////////////////////////////////////// */}
+                        {/*////////////////////////////////////////////////// working link////////////////////////////////////////////////////////////////////// */}
+                        <Links to='/tabscontent/mattressers-sleeping-pillows'><LargeText sx={{ color: "red" }}>Sleeping Pillows</LargeText></Links>
 
-                        <LargeText sx={{color:"red"}} onClick={handleClick2}>Sleeping Pillows </LargeText>
+                        {/* <LargeText sx={{ color: "red" }} onClick={handleClick2}>Sleeping Pillows </LargeText> */}
                         <Links to='/tabscontent/mattressers-2-seater-recliners'><LargeText>2 Seater Recliners  </LargeText></Links>
                         <Links to='/tabscontent/mattressers-3-seater-recliners'><LargeText>3 Seater Recliners  </LargeText></Links>
                         <Links to='/tabscontent/mattressers-sofa-sets'><LargeText>Recliner Sets  </LargeText></Links>
@@ -98,7 +100,7 @@ const Mattressers = () => {
 
                     {/* tabpannel column 3 */}
 
-                    <Grid lg={1.5} md={1.7} sm={2}  marginBottom={15}>
+                    <Grid lg={1.5} md={1.7} sm={2} marginBottom={15}>
                         <Links to='/tabscontent/mattressers-chairs' ><LargeText sx={{ color: '#9d6a37' }}>Chairs </LargeText></Links>
                         <Links to='/tabscontent/mattressers-arm-chairs'><LargeText>Arm Chairs </LargeText></Links>
                         <Links to='/tabscontent/mattressers-rocking-chairs'><LargeText>Rocking Chairs </LargeText></Links>
@@ -126,7 +128,7 @@ const Mattressers = () => {
 
                     {/* tabpannel column 4 */}
 
-                    <Grid lg={1.5} md={1.7} sm={2}  marginBottom={15}>
+                    <Grid lg={1.5} md={1.7} sm={2} marginBottom={15}>
                         <Links to='/tabscontent/mattressers-centre-tables' ><LargeText sx={{ color: '#9d6a37' }}>Centre Tables  </LargeText></Links>
                         <Links to='/tabscontent/mattressers-coffee-tables'><LargeText>Coffee Tables  </LargeText></Links>
                         <Links to='/tabscontent/mattressers-coffee-table-sets'><LargeText>Coffee Table Sets  </LargeText></Links>
@@ -159,7 +161,7 @@ const Mattressers = () => {
                     {/* grid 5 images coloumn */}
 
 
-                    <Grid lg={3} md={2.5} sm={2}  marginBottom={15}>
+                    <Grid lg={3} md={2.5} sm={2} marginBottom={15}>
 
                         <Grid lg={12} md={12} sm={12}>
 
@@ -167,7 +169,7 @@ const Mattressers = () => {
                         </Grid>
                     </Grid>
 
-                    <Grid lg={3} md={2.5} sm={2}  marginBottom={15}>
+                    <Grid lg={3} md={2.5} sm={2} marginBottom={15}>
 
                         <Grid lg={12} md={12} sm={12}>
 
