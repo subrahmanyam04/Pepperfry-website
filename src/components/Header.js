@@ -452,6 +452,9 @@ const Header = (props) => {
                             Logout
                           </Button>
                         </MenuItem>
+                        <MenuItem onClick={handleCloseUserMenu}>
+                        <Typography color={'#121212'} fontSize={{lg:"12px",md:"10px",sm:"10px"}} display={{sm:"block",md:"none"}}>{name}</Typography>
+                        </MenuItem>
                       </Menu>
                     </Box>
                     </>

@@ -2,7 +2,7 @@ import { Grid, Typography } from "@mui/material";
 import React from "react";
 import { styled } from "@mui/material";
 import { Link } from "react-router-dom";
-
+import { useNavigate } from 'react-router-dom';
 
 const Furniturtab = () => {
     const LargeText = styled(Typography)(({ theme }) => ({
@@ -18,13 +18,22 @@ const Furniturtab = () => {
         textDecoration: "none",
     }));
 
+    const navigate = useNavigate(); 
 
+    // const handleClick = () => {
+    //     // window.location.href = '/tabscontent/furniture-3-seater-sofas';
+    //     navigate("/tabscontent/furniture-3-seater-sofas");
 
-    const handleClick = () => {
-        window.location.href = '/tabscontent/furniture-3-seater-sofas';
-      };
-      const handleClick2 = () => {
-        window.location.href = '/tabscontent/furniture-1-seater-recliners';
+    //   };
+    //   const handleClick2 = () => {
+    //     // window.location.href = '/';
+    //     navigate("/tabscontent/furniture-1-seater-recliners");
+    //   };
+
+      const handleClick = (path) => {
+        // location.reload();
+        window.location.reload();
+        navigate(path);
       };
 
     return (
@@ -37,7 +46,7 @@ const Furniturtab = () => {
 
                     <Grid lg={1.5} md={1.7} sm={2}  marginBottom={15}>
                         <Links to='/tabscontent/furniture-sofas' ><LargeText sx={{ color: '#9d6a37' }}>Sofas</LargeText></Links>
-                        <LargeText sx={{color:"red"}} onClick={handleClick}>3 Seater Sofas </LargeText>
+                        <LargeText sx={{color:"red"}} onClick={() => handleClick('/tabscontent/furniture-3-seater-sofas')}>3 Seater Sofas </LargeText>
                         <Links to='/tabscontent/furniture-2-seater-sofas'><LargeText >2 Seater Sofas </LargeText></Links>
                         <Links to='/tabscontent/furniture-1-seater-sofas'><LargeText>1 Seater Sofas </LargeText></Links>
                         <Links to='/tabscontent/furniture-sofa-sets'><LargeText>Sofa Sets </LargeText></Links>
@@ -68,7 +77,7 @@ const Furniturtab = () => {
 
                     <Grid lg={1.5} md={1.7} sm={2}  marginBottom={15}>
                         <Links to='/tabscontent/furniture-recliners' ><LargeText sx={{ color: '#9d6a37' }}>Recliners </LargeText></Links>
-                        <LargeText sx={{color:"red"}} onClick={handleClick2}>1 Seater Recliners  </LargeText>
+                        <LargeText sx={{color:"red"}} onClick={() => handleClick('/tabscontent/furniture-1-seater-recliners')}>1 Seater Recliners  </LargeText>
                         <Links to='/tabscontent/furniture-2-seater-recliners'><LargeText>2 Seater Recliners  </LargeText></Links>
                         <Links to='/tabscontent/furniture-3-seater-recliners'><LargeText>3 Seater Recliners  </LargeText></Links>
                         <Links to='/tabscontent/furniture-sofa-sets'><LargeText>Recliner Sets  </LargeText></Links>
