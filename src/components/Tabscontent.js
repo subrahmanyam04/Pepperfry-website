@@ -24,14 +24,14 @@ const Tabscontent = () => {
             <div>
 
                 
-                <Tabscontentslider/> {/*2 component in the tabspage large:tabscontentslider.js ,medium:tabscontentformobile.js ,mobile:tabscontentsliderhor.js  */}
-                <Tabscontentcard1/>  {/*3 component in the  tabspage  large:tabscontentcard1 mobile:tabscard1mobile*/}
-                <Tabscontentcard2/>  {/*4 component in the  tabspage  static component*/}
-                <Tabssubbanner/>    {/*5 component in the  tabspage  small banner*/}   
-                <Tabsdynamiccard3/>  {/*6 component in the  tabspage  redux component*/}
+                <Tabscontentslider/>     {/*2 component in the tabspage large:tabscontentslider.js ,medium:tabscontentformobile.js ,mobile:tabscontentsliderhor.js  */}
+                <Tabscontentcard1/>      {/*3 component in the  tabspage  large:tabscontentcard1 mobile:tabscard1mobile*/}
+                <Tabscontentcard2/>      {/*4 component in the  tabspage  static component*/}
+                <Tabssubbanner/>         {/*5 component in the  tabspage  small banner*/}   
+                <Tabsdynamiccard3/>      {/*6 component in the  tabspage  redux component*/}
                 <Tabsstaticpagination/>  {/* 7 componenet in the tabs page static pagination */}
-                <Tabscontentinformation/> {/* 8 componenet in the tabs page some static information */}
-                <Tabscontentlinks/>       {/* 9 componenet in the tabs page some static information links */}
+                <Tabscontentinformation/>{/* 8 componenet in the tabs page some static information */}
+                <Tabscontentlinks/>      {/* 9 componenet in the tabs page some static information links */}
 
             </div>
         </Layout>

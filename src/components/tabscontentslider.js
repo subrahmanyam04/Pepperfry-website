@@ -109,7 +109,7 @@ const Tabscontentslider = ({
     ]
 
     const tabdata1 = sliderdata;
-    console.log('i am tabdata1',tabdata1)
+    console.log('i am tabdata1', tabdata1)
     const params = useParams();
     console.log('i am routing', params.catagoery)
 
@@ -120,7 +120,7 @@ const Tabscontentslider = ({
         <>
 
             <Grid display={{ lg: 'block', md: 'none', sm: 'none', xs: 'none' }} marginTop={2}>
-                
+
 
                 <Swiper
                     // install Swiper modules
@@ -200,7 +200,7 @@ const Tabscontentslider = ({
                                     >
 
 
-                                        <Grid container lg={12} md={12} sx={{  margin: 0, padding: 0, justifyContent: "center" }} border="0.5px solid lightgrey" >
+                                        <Grid container lg={12} md={12} sx={{ margin: 0, padding: 0, justifyContent: "center" }} border="0.5px solid lightgrey" >
 
                                             <Grid lg={11} md={11} sm={12} xs={12} sx={{ justifyContent: "center", alignItems: "center", textAlign: "center" }} >
 
@@ -216,7 +216,7 @@ const Tabscontentslider = ({
                                             </Grid>
                                             <Grid lg={11} md={11} sm={12} xs={12} textAlign={'center'}>
                                                 <ThemeProvider theme={theme}>
-                                                <Icon icon="mdi:tick-circle" color="lightblue"  width="18" height="18" />
+                                                    <Icon icon="mdi:tick-circle" color="lightblue" width="18" height="18" />
                                                     <Typography fontSize={'12px'} color={'#FF7035'} >All</Typography>
                                                     <Typography fontSize={'12px'} color={'#FF7035'}>137 Options</Typography>
                                                 </ThemeProvider>
@@ -311,7 +311,7 @@ const mapStateToProps = (state) => ({
     // sliderdata: state.Sliderreducer.sliderdata,
     sliderdata: state.Sliderreducer.sliderdata,
     // selectedAboutCard: state.Reducer1.selectedAboutCard
-    
+
 });
 
 const mapDispatchToProps = {

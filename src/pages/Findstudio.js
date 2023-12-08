@@ -31,7 +31,7 @@ const Findstudio = () => {
             <Findslider />         {/*tslider images component in find studio page*/}
             <Findbanner3 />        {/*sub-divided-banner component in find studio page*/}
             <Findfooter />         {/*Footer component in find studio page*/}
-            {/* <Gmaps isLoaded={isLoaded} /> */}
+           
           
 
 
