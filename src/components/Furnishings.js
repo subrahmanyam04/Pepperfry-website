@@ -17,11 +17,19 @@ const Furnishings = () => {
         textDecoration: "none",
     }));
 
-    const handleClick = () => {
-        window.location.href = '/tabscontent/furnishings-single-bed-sheets';
-    };
-    const handleClick2 = () => {
-        window.location.href = '/tabscontent/furnishings-3ft-x-5ft';
+    // const handleClick = () => {
+    //     window.location.href = '/tabscontent/furnishings-single-bed-sheets';
+    // };
+    // const handleClick2 = () => {
+    //     window.location.href = '/tabscontent/furnishings-3ft-x-5ft';
+    // };
+
+    const handleClick = (path) => {
+        const url = path
+     
+        window.location.href = url;
+       
+ 
     };
 
 
@@ -38,9 +46,9 @@ const Furnishings = () => {
 
                         {/*////////////////////////////////////////////////// working link////////////////////////////////////////////////////////////////////// */}
 
-                        <Links to='/tabscontent/furnishings-single-bed-sheets'><LargeText sx={{ color: "red" }}>Single Bed Sheets </LargeText></Links>
+                        {/* <Links to='/tabscontent/furnishings-single-bed-sheets'><LargeText sx={{ color: "red" }}>Single Bed Sheets </LargeText></Links> */}
 
-                        {/* <LargeText sx={{ color: "red" }} onClick={handleClick}>Single Bed Sheets</LargeText> */}
+                        <LargeText sx={{color:"red"}} onClick={() => handleClick('/tabscontent/furnishings-single-bed-sheets')}>Single Bed Sheets </LargeText>
                         <Links to='/tabscontent/furnishings-2-seater-sofas'><LargeText >2 Seater Sofas </LargeText></Links>
                         <Links to='/tabscontent/furnishings-1-seater-sofas'><LargeText>1 Seater Sofas </LargeText></Links>
                         <Links to='/tabscontent/furnishings-sofa-sets'><LargeText>Sofa Sets </LargeText></Links>
@@ -73,9 +81,9 @@ const Furnishings = () => {
                         <Links to='/tabscontent/furnishings-recliners' ><LargeText sx={{ color: '#9d6a37' }}>Carpets  </LargeText></Links>
 
                         {/*////////////////////////////////////////////////// working link////////////////////////////////////////////////////////////////////// */}
-                        <Links to='/tabscontent/furnishings-3ft-x-5ft'><LargeText sx={{ color: "red" }}>3ft x 5ft  </LargeText></Links>
+                        {/* <Links to='/tabscontent/furnishings-3ft-x-5ft'><LargeText sx={{ color: "red" }}>3ft x 5ft  </LargeText></Links> */}
 
-                        {/* <LargeText sx={{ color: "red" }} onClick={handleClick2}>3ft x 5ft </LargeText> */}
+                        <LargeText sx={{color:"red"}} onClick={() => handleClick('/tabscontent/furnishings-3ft-x-5ft')}>3ft x 5ft </LargeText>
                         <Links to='/tabscontent/furnishings-2-seater-recliners'><LargeText>2 Seater Recliners  </LargeText></Links>
                         <Links to='/tabscontent/furnishings-3-seater-recliners'><LargeText>3 Seater Recliners  </LargeText></Links>
                         <Links to='/tabscontent/furnishings-sofa-sets'><LargeText>Recliner Sets  </LargeText></Links>

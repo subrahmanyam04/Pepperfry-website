@@ -17,11 +17,19 @@ const Lampandliughtenings = () => {
         textDecoration: "none",
     }));
 
-    const handleClick = () => {
-        window.location.href = '/tabscontent/lamp&lightenings-floor-lamps';
-    };
-    const handleClick2 = () => {
-        window.location.href = '/tabscontent/lamp&lightenings-hanging-lights';
+    // const handleClick = () => {
+    //     window.location.href = '/tabscontent/lamp&lightenings-floor-lamps';
+    // };
+    // const handleClick2 = () => {
+    //     window.location.href = '/tabscontent/lamp&lightenings-hanging-lights';
+    // };
+
+    const handleClick = (path) => {
+        const url = path
+     
+        window.location.href = url;
+       
+ 
     };
 
 
@@ -39,9 +47,9 @@ const Lampandliughtenings = () => {
 
                         {/*////////////////////////////////////////////////// working link////////////////////////////////////////////////////////////////////// */}
 
-                        <Links to='/tabscontent/lamp&lightenings-floor-lamps'><LargeText sx={{ color: "red" }}>Floor Lamps </LargeText></Links>
+                        {/* <Links to='/tabscontent/lamp&lightenings-floor-lamps'><LargeText sx={{ color: "red" }}>Floor Lamps </LargeText></Links> */}
 
-                        {/* <LargeText sx={{ color: "red" }} onClick={handleClick}>Floor Lamps</LargeText> */}
+                        <LargeText sx={{color:"red"}} onClick={() => handleClick('/tabscontent/lamp&lightenings-floor-lamps')}>Floor Lamps </LargeText>
                         <Links to='/tabscontent/lamp&lightenings-2-seater-sofas'><LargeText >2 Seater Sofas </LargeText></Links>
                         <Links to='/tabscontent/lamp&lightenings-1-seater-sofas'><LargeText>1 Seater Sofas </LargeText></Links>
                         <Links to='/tabscontent/lamp&lightenings-sofa-sets'><LargeText>Sofa Sets </LargeText></Links>
@@ -74,9 +82,9 @@ const Lampandliughtenings = () => {
                         <Links to='/tabscontent/lamp&lightenings-recliners' ><LargeText sx={{ color: '#9d6a37' }}>Ceiling Lamps </LargeText></Links>
 
                         {/*////////////////////////////////////////////////// working link////////////////////////////////////////////////////////////////////// */}
-                        <Links to='/tabscontent/lamp&lightenings-hanging-lights'><LargeText sx={{ color: "red" }}>Hanging Lights  </LargeText></Links>
+                        {/* <Links to='/tabscontent/lamp&lightenings-hanging-lights'><LargeText sx={{ color: "red" }}>Hanging Lights  </LargeText></Links> */}
 
-                        {/* <LargeText sx={{ color: "red" }} onClick={handleClick2}>Hanging Lights </LargeText> */}
+                        <LargeText sx={{color:"red"}} onClick={() => handleClick('/tabscontent/lamp&lightenings-hanging-lights')}>Hanging Lights </LargeText>
                         <Links to='/tabscontent/lamp&lightenings-2-seater-recliners'><LargeText>2 Seater Recliners  </LargeText></Links>
                         <Links to='/tabscontent/lamp&lightenings-3-seater-recliners'><LargeText>3 Seater Recliners  </LargeText></Links>
                         <Links to='/tabscontent/lamp&lightenings-sofa-sets'><LargeText>Recliner Sets  </LargeText></Links>

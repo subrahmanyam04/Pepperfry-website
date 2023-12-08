@@ -17,11 +17,20 @@ const Appliances = () => {
         textDecoration: "none",
     }));
 
-    const handleClick = () => {
-        window.location.href = '/tabscontent/appliances-gas-stoves';
-    };
-    const handleClick2 = () => {
-        window.location.href = '/tabscontent/appliances-room-heaters';
+    // const handleClick = () => {
+    //     window.location.href = '/tabscontent/appliances-gas-stoves';
+    // };
+    // const handleClick2 = () => {
+    //     window.location.href = '/tabscontent/appliances-room-heaters';
+    // };
+
+    
+    const handleClick = (path) => {
+        const url = path
+     
+        window.location.href = url;
+       
+ 
     };
 
 
@@ -39,9 +48,9 @@ const Appliances = () => {
 
                         {/*////////////////////////////////////////////////// working link////////////////////////////////////////////////////////////////////// */}
 
-                        <Links to='/tabscontent/appliances-gas-stoves'><LargeText sx={{ color: "red" }}>Gas Stoves </LargeText></Links>
+                        {/* <Links to='/tabscontent/appliances-gas-stoves'><LargeText sx={{ color: "red" }}>Gas Stoves </LargeText></Links> */}
 
-                        {/* <LargeText sx={{ color: "red" }} onClick={handleClick}>Gas Stoves</LargeText> */}
+                        <LargeText sx={{color:"red"}} onClick={() => handleClick('/tabscontent/appliances-gas-stoves')}>Gas Stoves </LargeText>
                         <Links to='/tabscontent/appliances-2-seater-sofas'><LargeText >2 Seater Sofas </LargeText></Links>
                         <Links to='/tabscontent/appliances-1-seater-sofas'><LargeText>1 Seater Sofas </LargeText></Links>
                         <Links to='/tabscontent/appliances-sofa-sets'><LargeText>Sofa Sets </LargeText></Links>
@@ -74,9 +83,9 @@ const Appliances = () => {
                         <Links to='/tabscontent/appliances-recliners' ><LargeText sx={{ color: '#9d6a37' }}>Heating Appliances </LargeText></Links>
 
                         {/*////////////////////////////////////////////////// working link////////////////////////////////////////////////////////////////////// */}
-                        <Links to='/tabscontent/appliances-room-heaters'><LargeText sx={{ color: "red" }}>Room Heaters  </LargeText></Links>
+                        {/* <Links to='/tabscontent/appliances-room-heaters'><LargeText sx={{ color: "red" }}>Room Heaters  </LargeText></Links> */}
 
-                        {/* <LargeText sx={{ color: "red" }} onClick={handleClick2}>Room Heaters </LargeText> */}
+                        <LargeText sx={{color:"red"}} onClick={() => handleClick('/tabscontent/appliances-room-heaters')}>Room Heaters </LargeText>
                         <Links to='/tabscontent/appliances-2-seater-recliners'><LargeText>2 Seater Recliners  </LargeText></Links>
                         <Links to='/tabscontent/appliances-3-seater-recliners'><LargeText>3 Seater Recliners  </LargeText></Links>
                         <Links to='/tabscontent/appliances-sofa-sets'><LargeText>Recliner Sets  </LargeText></Links>

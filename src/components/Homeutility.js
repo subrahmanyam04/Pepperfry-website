@@ -17,13 +17,20 @@ const Homeutility = () => {
         textDecoration: "none",
     }));
 
-    const handleClick = () => {
-        window.location.href = '/tabscontent/homeutility-cloth-organizers';
-    };
-    const handleClick2 = () => {
-        window.location.href = '/tabscontent/homeutility-carpet-spa';
-    };
+    // const handleClick = () => {
+    //     window.location.href = '/tabscontent/homeutility-cloth-organizers';
+    // };
+    // const handleClick2 = () => {
+    //     window.location.href = '/tabscontent/homeutility-carpet-spa';
+    // };
 
+    const handleClick = (path) => {
+        const url = path
+     
+        window.location.href = url;
+       
+ 
+    };
 
     return (
         <>
@@ -38,9 +45,9 @@ const Homeutility = () => {
 
                         {/*////////////////////////////////////////////////// working link////////////////////////////////////////////////////////////////////// */}
 
-                        <Links to='/tabscontent/homeutility-cloth-organizers'><LargeText sx={{ color: "red" }}>Cloth Organizers </LargeText></Links>
+                        {/* <Links to='/tabscontent/homeutility-cloth-organizers'><LargeText sx={{ color: "red" }}>Cloth Organizers </LargeText></Links> */}
 
-                        {/* <LargeText sx={{ color: "red" }} onClick={handleClick}>Cloth Organizers</LargeText> */}
+                        <LargeText sx={{color:"red"}} onClick={() => handleClick('/tabscontent/homeutility-cloth-organizers')}>Cloth Organizers </LargeText>
                         <Links to='/tabscontent/homeutility-2-seater-sofas'><LargeText >2 Seater Sofas </LargeText></Links>
                         <Links to='/tabscontent/homeutility-1-seater-sofas'><LargeText>1 Seater Sofas </LargeText></Links>
                         <Links to='/tabscontent/homeutility-sofa-sets'><LargeText>Sofa Sets </LargeText></Links>
@@ -73,9 +80,9 @@ const Homeutility = () => {
                         <Links to='/tabscontent/homeutility-recliners' ><LargeText sx={{ color: '#9d6a37' }}>Home Care </LargeText></Links>
 
                         {/*////////////////////////////////////////////////// working link////////////////////////////////////////////////////////////////////// */}
-                        <Links to='/tabscontent/homeutility-carpet-spa'><LargeText sx={{ color: "red" }}>Carpet Spa  </LargeText></Links>
+                        {/* <Links to='/tabscontent/homeutility-carpet-spa'><LargeText sx={{ color: "red" }}>Carpet Spa  </LargeText></Links> */}
 
-                        {/* <LargeText sx={{ color: "red" }} onClick={handleClick2}>Carpet Spa </LargeText> */}
+                        <LargeText sx={{color:"red"}} onClick={() => handleClick('/tabscontent/homeutility-carpet-spa')}>Carpet Spa  </LargeText>
                         <Links to='/tabscontent/homeutility-2-seater-recliners'><LargeText>2 Seater Recliners  </LargeText></Links>
                         <Links to='/tabscontent/homeutility-3-seater-recliners'><LargeText>3 Seater Recliners  </LargeText></Links>
                         <Links to='/tabscontent/homeutility-sofa-sets'><LargeText>Recliner Sets  </LargeText></Links>

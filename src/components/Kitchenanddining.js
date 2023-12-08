@@ -17,11 +17,19 @@ const Kitchenanddining = () => {
         textDecoration: "none",
     }));
 
-    const handleClick = () => {
-        window.location.href = '/tabscontent/kitchen&dining-serving-bowls';
-    };
-    const handleClick2 = () => {
-        window.location.href = '/tabscontent/kitchen&dining-dinnerware-sets';
+    // const handleClick = () => {
+    //     window.location.href = '/tabscontent/kitchen&dining-serving-bowls';
+    // };
+    // const handleClick2 = () => {
+    //     window.location.href = '/tabscontent/kitchen&dining-dinnerware-sets';
+    // };
+
+    const handleClick = (path) => {
+        const url = path
+     
+        window.location.href = url;
+       
+ 
     };
 
 
@@ -38,9 +46,9 @@ const Kitchenanddining = () => {
 
                         {/*////////////////////////////////////////////////// working link////////////////////////////////////////////////////////////////////// */}
 
-                        <Links to='/tabscontent/kitchen&dining-serving-bowls'><LargeText sx={{ color: "red" }} >Serving Bowls </LargeText></Links>
+                        {/* <Links to='/tabscontent/kitchen&dining-serving-bowls'><LargeText sx={{ color: "red" }} >Serving Bowls </LargeText></Links> */}
 
-                        {/* <LargeText sx={{ color: "red" }} onClick={handleClick}>Serving Bowls</LargeText> */}
+                        <LargeText sx={{color:"red"}} onClick={() => handleClick('/tabscontent/kitchen&dining-serving-bowls')}>Serving Bowls </LargeText>
                         <Links to='/tabscontent/kitchen&dining-2-seater-sofas'><LargeText >2 Seater Sofas </LargeText></Links>
                         <Links to='/tabscontent/kitchen&dining-1-seater-sofas'><LargeText>1 Seater Sofas </LargeText></Links>
                         <Links to='/tabscontent/kitchen&dining-sofa-sets'><LargeText>Sofa Sets </LargeText></Links>
@@ -73,9 +81,9 @@ const Kitchenanddining = () => {
                         <Links to='/tabscontent/kitchen&dining-recliners' ><LargeText sx={{ color: '#9d6a37' }}>Dinner Ware  </LargeText></Links>
 
                         {/*////////////////////////////////////////////////// working link////////////////////////////////////////////////////////////////////// */}
-                        <Links to='/tabscontent/kitchen&dining-dinnerware-sets'><LargeText sx={{ color: "red" }}>Dinnerware Sets  </LargeText></Links>
+                        {/* <Links to='/tabscontent/kitchen&dining-dinnerware-sets'><LargeText sx={{ color: "red" }}>Dinnerware Sets  </LargeText></Links> */}
 
-                        {/* <LargeText sx={{ color: "red" }} onClick={handleClick2}>Dinnerware Sets </LargeText> */}
+                        <LargeText sx={{color:"red"}} onClick={() => handleClick('/tabscontent/kitchen&dining-dinnerware-sets')}>Dinnerware Sets </LargeText>
                         <Links to='/tabscontent/kitchen&dining-2-seater-recliners'><LargeText>2 Seater Recliners  </LargeText></Links>
                         <Links to='/tabscontent/kitchen&dining-3-seater-recliners'><LargeText>3 Seater Recliners  </LargeText></Links>
                         <Links to='/tabscontent/kitchen&dining-sofa-sets'><LargeText>Recliner Sets  </LargeText></Links>

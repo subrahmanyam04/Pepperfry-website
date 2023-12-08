@@ -17,11 +17,19 @@ const Sofasandseatings = () => {
         textDecoration: "none",
     }));
 
-    const handleClick = () => {
-        window.location.href = '/tabscontent/sofas&seatings-lhs-sectionals';
-    };
-    const handleClick2 = () => {
-        window.location.href = '/tabscontent/sofas&seatings-wing-chairs';
+    // const handleClick = () => {
+    //     window.location.href = '/tabscontent/sofas&seatings-lhs-sectionals';
+    // };
+    // const handleClick2 = () => {
+    //     window.location.href = '/tabscontent/sofas&seatings-wing-chairs';
+    // };
+
+    const handleClick = (path) => {
+        const url = path
+     
+        window.location.href = url;
+       
+
     };
 
     return (
@@ -43,9 +51,9 @@ const Sofasandseatings = () => {
                         <Links to='/tabscontent/sofas&seatings-sofas' ><LargeText sx={{ color: '#9d6a37', marginTop: '20px' }}>Sectional Sofas </LargeText></Links>
 
                         {/*////////////////////////////////////////////////// working link////////////////////////////////////////////////////////////////////// */}
-                        <Links to='/tabscontent/sofas&seatings-lhs-sectionals'><LargeText sx={{ color: "red" }}>LHS Sectionals  </LargeText></Links>
+                        {/* <Links to='/tabscontent/sofas&seatings-lhs-sectionals'><LargeText sx={{ color: "red" }}>LHS Sectionals  </LargeText></Links> */}
 
-                        {/* <LargeText sx={{ color: "red" }} onClick={handleClick}>LHS Sectionals  </LargeText> */}
+                        <LargeText sx={{color:"red"}} onClick={() => handleClick('/tabscontent/sofas&seatings-lhs-sectionals')}>LHS Sectionals </LargeText>
                         <Links to='/tabscontent/sofas&seatings-2-seater-sofas'><LargeText>RHS Sectionals  </LargeText></Links>
                         <Links to='/tabscontent/sofas&seatings-1-seater-sofas'><LargeText>Corner Sofas </LargeText></Links>
 
@@ -78,9 +86,9 @@ const Sofasandseatings = () => {
                         <Links to='/tabscontent/sofas&seatings-sofa-chairs' ><LargeText sx={{ color: '#9d6a37', marginTop: '20px' }}>Sofa Chairs  </LargeText></Links>
 
                         {/*////////////////////////////////////////////////// working link////////////////////////////////////////////////////////////////////// */}
-                        <Links to='/tabscontent/sofas&seatings-wing-chairs'><LargeText sx={{ color: "red" }}>Wing Chairs  </LargeText></Links>
+                        {/* <Links to='/tabscontent/sofas&seatings-wing-chairs'><LargeText sx={{ color: "red" }}>Wing Chairs  </LargeText></Links> */}
 
-                        {/* <LargeText sx={{ color: "red" }} onClick={handleClick2}>Wing Chairs   </LargeText> */}
+                        <LargeText sx={{color:"red"}} onClick={() => handleClick('/tabscontent/sofas&seatings-wing-chairs')}>Wing Chairs </LargeText>
                         <Links to='/tabscontent/sofas&seatings-lounge-chairs'><LargeText>Lounge Chairs  </LargeText></Links>
                         <Links to='/tabscontent/sofas&seatings-slipper-chairs '><LargeText>Slipper Chairs  </LargeText></Links>
                         <Links to='/tabscontent/sofas&seatings-barrel-chairs'><LargeText>Barrel Chairs   </LargeText></Links>

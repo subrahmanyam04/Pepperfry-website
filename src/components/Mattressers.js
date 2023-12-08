@@ -18,11 +18,19 @@ const Mattressers = () => {
     }));
 
 
-    const handleClick = () => {
-        window.location.href = '/tabscontent/mattressers-foam';
-    };
-    const handleClick2 = () => {
-        window.location.href = '/tabscontent/mattressers-sleeping-pillows';
+    // const handleClick = () => {
+    //     window.location.href = '/tabscontent/mattressers-foam';
+    // };
+    // const handleClick2 = () => {
+    //     window.location.href = '/tabscontent/mattressers-sleeping-pillows';
+    // };
+
+    const handleClick = (path) => {
+        const url = path
+     
+        window.location.href = url;
+       
+
     };
 
     return (
@@ -38,9 +46,9 @@ const Mattressers = () => {
 
                         {/*////////////////////////////////////////////////// working link////////////////////////////////////////////////////////////////////// */}
 
-                        <Links to='/tabscontent/mattressers-foam'><LargeText sx={{ color: "red" }}>Foam </LargeText></Links>
+                        {/* <Links to='/tabscontent/mattressers-foam'><LargeText sx={{ color: "red" }}>Foam </LargeText></Links> */}
 
-                        {/* <LargeText sx={{color:"red"}} onClick={handleClick}>Foam</LargeText> */}
+                        <LargeText sx={{color:"red"}} onClick={() => handleClick('/tabscontent/mattressers-foam')}>Foam </LargeText>
                         <Links to='/tabscontent/mattressers-2-seater-sofas'><LargeText >2 Seater Sofas </LargeText></Links>
                         <Links to='/tabscontent/mattressers-1-seater-sofas'><LargeText>1 Seater Sofas </LargeText></Links>
                         <Links to='/tabscontent/mattressers-sofa-sets'><LargeText>Sofa Sets </LargeText></Links>
@@ -73,9 +81,9 @@ const Mattressers = () => {
                         <Links to='/tabscontent/mattressers-recliners' ><LargeText sx={{ color: '#9d6a37' }}>Pillows  </LargeText></Links>
 
                         {/*////////////////////////////////////////////////// working link////////////////////////////////////////////////////////////////////// */}
-                        <Links to='/tabscontent/mattressers-sleeping-pillows'><LargeText sx={{ color: "red" }}>Sleeping Pillows</LargeText></Links>
+                        {/* <Links to='/tabscontent/mattressers-sleeping-pillows'><LargeText sx={{ color: "red" }}>Sleeping Pillows</LargeText></Links> */}
 
-                        {/* <LargeText sx={{ color: "red" }} onClick={handleClick2}>Sleeping Pillows </LargeText> */}
+                        <LargeText sx={{color:"red"}} onClick={() => handleClick('/tabscontent/mattressers-sleeping-pillows')}>Sleeping Pillows </LargeText>
                         <Links to='/tabscontent/mattressers-2-seater-recliners'><LargeText>2 Seater Recliners  </LargeText></Links>
                         <Links to='/tabscontent/mattressers-3-seater-recliners'><LargeText>3 Seater Recliners  </LargeText></Links>
                         <Links to='/tabscontent/mattressers-sofa-sets'><LargeText>Recliner Sets  </LargeText></Links>
